@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: green;
+    }
+    .test-1 {
+        background-color: green;
+    }
+    .li {
+        background-color: green;
+    }
+</style>
+<body>
+     <!-- Nhứng CSS bằng inline -->
+     <header style="color: red; text-align: center !important;">
+        <h1>Demo CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Bộ ưu tiên trong CSS</h3>
+            <ul>
+                <li style="background-color: orangered;">
+                    Inline ưu tiên hơn internal , external
+                </li>
+                <li class="test-1">
+                    exter và inter dựa vào thứ tự nhúng trong html
+                </li>
+                <li>
+                    Bộ chọn có ảnh hưởng thấp thì sự ưu tiên càng cao
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Box model</h3>
+            <div class="box">Hello world , I'm Box</div>
+            <div class="box-2"></div>
+        </section>
+
+        <section>
+            <h3>Bộ chọn - Selector</h3>
+            <div>hello parent</div>
+            <ul>
+                <li>
+                    <div>xin chào ông!</div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>thay đổi display</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
