@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 100px 400px;
+}
+header{
+    background-color: rgba(238, 176, 70, 0.897);
+    opacity: 0.7;
+    display: inline-block;
+    margin-top: 200px;
+    padding: 10px 120px 10px 10px;
+}
+header p{
+    width: 300px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.logo{
+    width: 699px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+
