@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr style="text-align: center;">
+            <td><b>Amount</b></td>
+            <td><b>From currency</b></td>
+            <td><b>To currency</b></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"></td>
+            <td>
+                <select id="from" style="width: 100px;">
+                    <option value="VND"> VND</option>
+                    <option value="USD"> USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="to" style="width: 100px;">
+                    <option value="VND"> VND</option>
+                    <option value="USD"> USD</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="convert()">Convert</button>
+            </td>
+    </table>
+    <br>
+    Result: <h1 id="ketqua"></h1>
+    <script>
+        function convert() {
+            let amount = document.getElementById('amount').value;
+            let from = document.getElementById('from').value;
+            let to = document.getElementById('to').value;
+            let result ;
+    
+            if ( from === "VND" && to === "USD" ){
+                result = amount / 23000;
+            } else if ( from === "USD" && to === "VND"){
+                result = amount * 23000;
+            } else {
+                result = amount;
+            }
+            document.getElementById('ketqua').innerText =  result          ;
+        }
+    
+    </script>   
+</body>
+</html>
