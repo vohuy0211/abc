@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="listDrinks"></p>
+<body>
+    <script>
+        const drinks = ["Sting", "Bò húc", "Coca", "Nước ép", "Coffe"]
+        const drinksList = document.querySelector("#listDrinks");
+
+        let contentDrinksList="";
+        for(const drink of drinks){
+            contentDrinksList += `<li>${drink}</li>`;
+            }
+            drinksList.innerHTML = contentDrinksList;
+    </script>
+</body>
+</html>

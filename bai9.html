@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arra = new Array(10);
+        let arrb = new Array(10);
+        let c = new Array(2);
+        for (let i = 0; i < arra.length; i++) {
+            let num = parseInt(prompt("Nhập vào mảng a phần tử thứ " + (i + 1)))
+            arra[i] = num;
+        }
+        for (i = 0; i < arrb.length; i++) {
+            let num = (prompt("Nhập vào mảng b phần tử thứ " + (i + 1)))
+            arrb[i] = num;
+        }
+        c = arra.concat(arrb);
+        console.log(c);
+    
+    
+    </script>                      
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <span>Nhập từ cần dịch :</span>
+   <input type="text" id="cc">
+   <button onclick="pandemic()">Tra cứu</button>
+   <p id="Search">Dịch :</p>
+
+   <script>
+        let arr1 = ["go" , "hello" , "goodbye" , "mother"];
+        let arr2 = ["đi" , "xin chào" , "tạm biệt" , "mẹ"];
+        let index = "";
+        function pandemic(){
+            let Word = document.getElementById('cc').value.toLowerCase();
+            for(i = 0 ; i < arr1.length ; i++){
+                index = arr1.indexOf(Word)
+                if(index!= -1){
+                    document.getElementById('Search').innerHTML += arr2[index];
+                    break;
+                }else{
+                    document.getElementById('Search').innerHTML = "Không có từ cần dịch";
+                }
+                index = arr2.indexOf(Word)
+                if(index!= -1){
+                    document.getElementById('Search').innerHTML = arr1[index];
+                    break;
+                }else{
+                    document.getElementById('Search').innerHTML = "Không có từ cần dịch";
+                }
+            }
+        }
+   </script>
+</body>
+</html>
