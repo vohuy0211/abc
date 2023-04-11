@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+    }
+    .font_Color{
+        border-color: red;
+        color: red;
+    }
+    #font{
+        background-color: rgb(44, 44, 121);
+        padding: 10px;
+        text-align: center;
+        width: 100%px;
+        margin: auto;
+    }
+    img{
+        border-radius: 50%;
+        width: 60px;
+    }
+    tr{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .man{
+        text-align: center;
+        padding: 30px;
+    }
+    th{
+        border-bottom: 2px solid black;
+    }
+    td{
+        border-bottom: 1px solid black  ;
+        text-align: center;
+    }
+    #form {
+        width: 500px;
+        display: none;
+    }
+    #form > * {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 30% 70%;
+        margin: 20px;
+    }
+    #item {
+        background-color: rgb(59, 250, 59);
+        font-size: 30px;
+    }
+    #item_1 {
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <main class="man">
+        <input type="text" id="input-search" placeholder="Search....">
+        <button onclick="handleSearch()">Tìm Kiếm</button>
+    </main>
+    <button onclick="handleToggle(this)" id="item_1">Creater user</button>
+
+        <div id="form">
+            <div>
+                <label for="avatar">Avatar</label>
+                <input type="file" id="avatar" name="avatar">
+            </div>
+            <div>
+                <label for="first-name">First Name :</label>
+                <input type="text" id="first-name" name="firstname">
+            </div>
+            <div>
+                <label for="last-name">Last Name :</label>
+                <input type="text" id="last-name" name="lastname">
+            </div>
+            <div>
+                <label for="User-name">User name :</label>
+                <input type="text" id="User-name" name="Username">
+            </div>
+                <button onclick="handleSubmit()" id="item">Submit</button>
+        </div>
+    <table id="idtable" width = 100% cellpadding = 20px >
+        
+        <header class="font-size-boder">
+            <h1>Quản lí dữ liệu người dùng</h1>
+            <p id="font">My App</p>
+            <br>
+        <thead>   
+            <tr>
+                <th>STT</th>
+                <th>Avatar</th>
+                <th>First</th>
+                <th>Last</th>
+                <th>Username</th>
+                <th>Action</th>      
+            </tr>
+        </thead>
+        <tbody>     
+            <tr>
+                <td>1</td>
+                <td><img src="Avata1.jpg" alt=""></td>
+                <td>Huy</td>
+                <td>Võ</td>
+                <td>Võ Tấn Gia Huy</td>
+                <td>
+                    <button>Edit</button>
+                    <button class="font_Color">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="Avata2.jpg" alt=""></td>
+                <td>Ivy</td>
+                <td>Cal</td>
+                <td>Ivy.Cal</td>
+                <td>
+                    <button>Edit</button>
+                    <button class="font_Color">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </header>
+    </table>
+    <script src="CROD.js">
+    </script>
+</body>
+</html>
